@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slope Calculator</title>
+    <link rel="stylesheet" href="slope.css">
+</head>
+<body>
+    <header>
+        <h1>SLOPE CALCULATOR</h1>
+    </header>
+    <main>
+        <h3>Slope Calculator -
+
+            This online tool efficiently calculates the slope of a line given two points in the Cartesian coordinate plane. The slope, often denoted as 'm', represents the steepness or inclination of a line and is a fundamental concept in linear algebra and geometry. By inputting the coordinates (x₁, y₁) and (x₂, y₂) of two distinct points on the line, the calculator accurately computes the slope using the formula:
+            m = (y₂ - y₁) / (x₂ - x₁).
+            Understanding the slope is crucial for various mathematical and scientific applications, including linear equations, graphing, and analyzing linear relationships between variables. This tool provides a convenient and precise method for determining the slope of a line, aiding in problem-solving and data analysis.</h3>
+        <div id="operation">
+            <h3>Select the mode: </h3>
+            <select id="modeSelect">
+                <option value="" disabled selected>Select mode</option>
+                <option value="angle">Angle</option>
+                <option value="points">Points</option>
+            </select>
+            <div id="inputs"></div>
+            <button id="calculate" style="display:none;">Calculate</button>
+            <div id="result"></div>
+        </div>
+    </main>
+    <script src="slope.js"></script>
+</body>
+</html>

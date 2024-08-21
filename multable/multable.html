@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="multable.css">
+    <style>
+        #res p {
+            margin: 5px 0;
+            font-size: 1.25em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MULTIPLICATION TABLE</h1>
+    </header>
+    <main>
+        <h3>Master Multiplication with Ease!
+            This tool generates a comprehensive multiplication table for any number you input. Whether you're a student looking to practice times tables, a teacher creating worksheets, or simply someone who needs a quick reference, this multiplication table generator is your solution. Improve your math skills and explore number patterns effortlessly. Try it out and see how easy multiplication can be!</h3>
+        <div id="operation">
+            <h3>Enter a number: </h3>
+            <input type="number" id="num">
+            <br>
+            <button onclick="createTable()">Create</button>
+            <div id="res"></div>
+        </div>
+    </main>
+    <script>
+        function createTable() {
+            const num = document.getElementById('num').value;
+            const res = document.getElementById('res');
+
+            if (num === '') {
+                res.innerHTML = '<p>Please enter a number.</p>';
+                return;
+            }
+
+            let table = '<table>';
+            table += '<tr><th>Number</th><th>Multiplication</th><th>Result</th></tr>';
+
+            for (let i = 1; i <= 10; i++) {
+                table += `<tr>
+                            <td>${num} x ${i} = </td>
+                            <td>${num * i}</td>
+                        </tr>`;
+            }
+
+            table += '</table>';
+            res.innerHTML = table;
+        }
+    </script>
+</body>
+</html>

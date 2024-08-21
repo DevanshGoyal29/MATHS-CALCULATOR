@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensuration</title>
+    <link rel="stylesheet" href="mensuration.css">
+</head>
+<body>
+    <header>
+        <h1>MENSURATION</h1>
+    </header>
+    <main>
+        <h3>Need to measure your shapes? This tool calculates the perimeter (distance around) and area (space inside) of rectangles, squares, circles, and parallelograms. Whether you're designing a garden, framing a picture, or solving a geometry problem, accurate measurements are essential. Simply input the required dimensions, and this calculator will provide the results in a snap. Let's shape up your math skills!</h3>
+        <div id="operation">
+            <h3>Select a shape:</h3>
+            <select id="shapeSelect">
+                <option value="" disabled selected>Select shape</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="square">Square</option>
+                <option value="circle">Circle</option>
+                <option value="parallelogram">Parallelogram</option>
+            </select>
+            <div id="inputs"></div>
+            <button id="calculate" style="display:none;">Calculate</button>
+            <div id="result"></div>
+        </div>
+    </main>
+    <script src="mensuration.js"></script>
+</body>
+</html>

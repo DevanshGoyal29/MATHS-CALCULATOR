@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Formula</title>
+    <link rel="stylesheet" href="distance.css">
+</head>
+<body>
+    <header>
+        <h1>DISTANCE BETWEEN TWO POINTS</h1>
+    </header>
+    <main>
+        <h3>Distance Between Two Points Calculator
+
+            This tool calculates the Euclidean distance between two points in a Cartesian coordinate system. Given the coordinates (x₁, y₁) and (x₂, y₂) of two points, the calculator efficiently computes the straight-line distance between them using the distance formula. This formula is derived from the Pythagorean theorem and is fundamental in various fields, including geometry, physics, and computer science. Whether you're solving geometric problems, analyzing spatial data, or working on engineering applications, this distance calculator provides a precise and convenient solution.</h3>
+        <div id="operation">
+            <h3>Select Coordinate Plane:</h3>
+            <select id="planeSelect">
+                <option value="xy">X-Y Plane</option>
+                <option value="xyz">X-Y-Z Plane</option>
+            </select>
+
+            <div id="inputFields">
+                <!-- Input fields will be dynamically added here based on plane selection -->
+            </div>
+
+            <button id="calculate">Calculate</button>
+
+            <div id="res"></div>
+        </div>
+    </main>
+    <script src="distance.js"></script>
+</body>
+</html>

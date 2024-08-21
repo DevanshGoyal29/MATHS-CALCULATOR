@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Equation Calculator</title>
+    <link rel="stylesheet" href="lines.css">
+</head>
+<body>
+    <header>
+        <h1>LINE EQUATION CALCULATOR</h1>
+    </header>
+    <main>
+        <h3>Equation of a Line Calculator -
+
+            This tool provides a comprehensive solution for determining the equation of a straight line. A linear equation, typically expressed in the form y = mx + b, represents a fundamental concept in mathematics with applications spanning various fields. By utilizing this calculator, users can efficiently derive the equation of a line based on different input parameters, such as two points on the line, the slope and y-intercept, or a point and slope. This functionality empowers users to accurately model linear relationships, analyze geometric properties, and solve problems involving linear equations with confidence.
+            
+            Whether engaged in academic pursuits, scientific research, or engineering applications, this tool offers a valuable resource for understanding and working with linear functions.</h3>
+        <h3>Select the type of line equation to calculate:</h3>
+        <div id="operation">
+            <select id="equationSelect">
+                <option value="" disabled selected>Select Equation Form</option>
+                <option value="horizontal">Horizontal Line</option>
+                <option value="vertical">Vertical Line</option>
+                <option value="pointSlope">Point-Slope Form</option>
+                <option value="twoPoint">Two-Point Form</option>
+                <option value="slopeIntercept">Slope-Intercept Form</option>
+                <option value="intercept">Intercept Form</option>
+                <option value="normal">Normal Form</option>
+            </select>
+            <div id="inputs"></div>
+            <button id="calculate" style="display:none;">Calculate</button>
+            <div id="result"></div>
+        </div>
+    </main>
+    <script src="lines.js"></script>
+</body>
+</html>

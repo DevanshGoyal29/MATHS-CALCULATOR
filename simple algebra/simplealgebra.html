@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations on Whole Numbers</title>
+    <link rel="stylesheet" href="simplealgebra.css">
+</head>
+<body>
+    <header>
+        <h1>OPERATIONS ON WHOLE NUMBERS</h1>
+    </header>
+    <main>
+        <h3>
+            Whole numbers are a collection of positive numbers starting from zero and extending infinitely without fractions or decimals. They are used for counting objects and basic arithmetic operations. Examples of whole numbers include 0, 1, 2, 3, 4, and so on.
+        </h3>
+        <h3>
+            Imagine you have numbers and you want to do things with them, like putting them together, taking them away, making them bigger or smaller. Arithmetic is like a toolbox that has tools to help you do these things with numbers. Inside the toolbox you'll find tools for:
+            <ul>
+                <li>Plus (+) Party: Putting things together. Like adding all your toys to find the grand total!</li>
+                <li>Sneaky Minus (-): Taking things away. Like a mischievous parrot stealing your pirate treasure (those gold coins keep disappearing!).</li>
+                <li>Clone Machine (x): Making things bigger! Imagine a machine that pumps out cookies (the more you crank it, the more cookies you get!).</li>
+                <li>Sharing Time (÷): Splitting things up. Like sharing a giant cookie mountain with your friends (more cookies than friends means bigger pieces for everyone!).</li>
+            </ul>
+            Ready to be a math whiz? Grab some toys and practice these fun number tricks! You can even create your own pirate treasure hunts with problems to solve. And hey, if you get stuck, even the smartest pirates need a treasure map sometimes (use that cool calculator below!).
+        </h3>
+        <div id="main-container">
+            <div class="operation" id="addition-container">
+                <h2>Addition</h2>
+                <input type="number" id="addn1">
+                <p>+</p>
+                <input type="number" id="addn2">
+                <p>=</p>
+                <div class="result" id="addres"></div>
+                <button class="calculate" id="addcalc">Calculate</button>
+            </div>
+            <div class="operation" id="subtraction-container">
+                <h2>Subtraction</h2>
+                <input type="number" id="subn1">
+                <p>-</p>
+                <input type="number" id="subn2">
+                <p>=</p>
+                <div class="result" id="subres"></div>
+                <button class="calculate" id="subcalc">Calculate</button>
+            </div>
+            <div class="operation" id="multiplication-container">
+                <h2>Multiplication</h2>
+                <input type="number" id="muln1">
+                <p>*</p>
+                <input type="number" id="muln2">
+                <p>=</p>
+                <div class="result" id="mulres"></div>
+                <button class="calculate" id="mulcalc">Calculate</button>
+            </div>
+            <div class="operation" id="division-container">
+                <h2>Division</h2>
+                <input type="number" id="divn1">
+                <p>/</p>
+                <input type="number" id="divn2">
+                <p>=</p>
+                <div class="result" id="divres"></div>
+                <button class="calculate" id="divcalc">Calculate</button>
+            </div>
+        </div>
+        <div id="numline-img">
+            <img src="addition.jpeg" alt="addition on number line">
+            <img src="subtraction.jpeg" alt="subtracion on number line">
+            <img src="multiplication.jpeg" alt="multiplication on number line">
+            <img src="division.jpeg" alt="division on number line">
+        </div>
+    </main>
+    <script src="simplealgebra.js"></script>
+</body>
+</html>

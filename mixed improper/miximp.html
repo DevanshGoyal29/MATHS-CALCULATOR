@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraction Converter</title>
+    <link rel="stylesheet" href="miximp.css">
+</head>
+<body>
+    <header>
+        <h1>FRACTION CONVERTOR</h1>
+    </header>
+    <main>
+        <h3>Confused about fractions? This tool is your fraction-flipping friend! Easily convert improper fractions (where the numerator is larger than the denominator) into mixed numbers (a whole number and a fraction), or vice versa. Whether you're baking a cake, measuring ingredients, or solving math problems, this converter simplifies the process. No more fraction frustration! Input your fraction, and let the tool do the work for you.</h3>
+        <div class="container">
+            <div class="converter">
+                <h3>Mixed to Improper Fraction</h3>
+                <div class="input-group">
+                    <label for="whole-number">Whole Number:</label>
+                    <input type="number" id="whole-number" placeholder="Enter whole number">
+                </div>
+                <div class="input-group">
+                    <label for="numerator">Numerator:</label><br>
+                    <input type="number" id="numerator" placeholder="Enter numerator">
+                </div>
+                <div class="input-group">
+                    <label for="denominator">Denominator:</label>
+                    <input type="number" id="denominator" placeholder="Enter denominator">
+                </div>
+                <button onclick="convertToImproper()">Convert to Improper Fraction</button>
+                <div id="improper-result" class="result"></div>
+            </div>
+    
+            <div class="converter">
+                <h3>Improper to Mixed Fraction</h3>
+                <div class="input-group">
+                    <label for="imp-numerator">Numerator:</label><br>
+                    <input type="number" id="imp-numerator" placeholder="Enter numerator">
+                </div>
+                <div class="input-group">
+                    <label for="imp-denominator">Denominator:</label>
+                    <input type="number" id="imp-denominator" placeholder="Enter denominator">
+                </div>
+                <button onclick="convertToMixed()">Convert to Mixed Fraction</button>
+                <div id="mixed-result" class="result"></div>
+            </div>
+        </div>
+    </main>
+    <script src="miximp.js"></script>
+</body>
+</html>

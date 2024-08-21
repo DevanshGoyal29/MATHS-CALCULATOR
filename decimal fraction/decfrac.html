@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal to Fraction Converter</title>
+    <link rel="stylesheet" href="decfrac.css">
+</head>
+<body>
+    <header>
+        <h1>DECIMAL &#8644; FRACTION CONVERTOR</h1>
+    </header>
+    <main>
+        <h3>Fractions and Decimals: Two Sides of the Same Coin
+
+            Need to switch between fractions and decimals? Look no further! This tool effortlessly converts fractions into their decimal equivalents and vice versa. Whether you're working on a math problem, following a recipe, or simply exploring number relationships, this converter is your handy helper. Discover the flexibility of representing numbers in different forms and enhance your mathematical understanding with ease. Try it now and see how fractions and decimals complement each other!</h3>
+        <div class="container">
+            <h2>Decimal to Fraction</h2>
+            <div class="input-group">
+                <label for="decimal-input">Decimal:</label>
+                <input type="number" step="any" id="decimal-input" placeholder="Enter decimal">
+            </div>
+            <button onclick="convertToFraction()">Convert to Fraction</button>
+            <div id="fraction-result" class="result"></div>
+        </div>
+
+        <div class="container">
+            <h2>Fraction to Decimal</h2>
+            <div class="input-group">
+                <label for="frac-numerator">Numerator:</label>
+                <input type="number" id="frac-numerator" placeholder="Enter numerator">
+            </div>
+            <div class="input-group">
+                <label for="frac-denominator">Denominator:</label>
+                <input type="number" id="frac-denominator" placeholder="Enter denominator">
+            </div>
+            <button onclick="convertToDecimal()">Convert to Decimal</button>
+            <div id="decimal-result" class="result"></div>
+        </div>
+    </main>
+
+    <script src="decfrac.js"></script>
+</body>
+</html>

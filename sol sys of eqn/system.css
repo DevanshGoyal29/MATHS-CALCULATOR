@@ -1,0 +1,142 @@
+body {
+    background-color: #f7f9f9;
+    color: #150578;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #f2f4ff;
+    padding: 20px;
+    text-align: center;
+    color: #0d41e1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#operation {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #caf0f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    height: 50px;
+    width: 90%;
+    max-width: 300px;
+    color: #0a2463;
+    border: 2px solid #4ba3c3;
+    border-radius: 10px;
+    font-size: 1.25em;
+    background: transparent;
+    margin: 20px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+button {
+    height: 50px;
+    width: 80%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin: 20px 0;
+    background-color: #54defd;
+    color: #020887;
+    border: 2px solid #9fd2ee;
+    font-size: 1.25em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #67c6dc;
+}
+
+#res {
+    height: auto;
+    min-height: 60px;
+    width: 90%;
+    max-width: 700px;
+    color: #0a2463;
+    border: 2px solid #4ba3c3;
+    border-radius: 10px;
+    font-size: 1.25em;
+    background: transparent;
+    margin: 20px 0;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    input, #res {
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    input, #res {
+        font-size: 0.9em;
+    }
+}

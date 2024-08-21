@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI & CI Calculator</title>
+    <link rel="stylesheet" href="sici.css">
+</head>
+<body>
+    <header>
+        <h1>SIMPLE INTEREST & COMPOUND INTEREST CALCULATOR</h1>
+    </header>
+    <main>
+        <h3>Interest Rate Analysis Tool
+
+            This tool provides accurate calculations for both simple and compound interest, essential for financial planning and analysis. Simple interest is computed based on the initial principal amount, while compound interest accounts for the compounding effect over time. By inputting the principal, interest rate, and time period, users can effectively compare the growth potential of investments or the cost of borrowing under different interest regimes. This tool empowers users to make informed financial decisions by quantifying the impact of interest rates on monetary values.
+        </h3>
+        <h3>P = Principal ; r = Rate of interest ; n = number of times interest is compounded per year ; t = time (in years)</h3>
+        <h3></h3>
+        <div id="operation">
+            <h3>Enter the values: </h3>
+            <select id="opselect">
+                <option value="" disabled selected>Select operation</option>
+                <option value="si">Simple Interest</option>
+                <option value="ci">Compound Interest</option>
+            </select>
+            <div id="inputs"></div>
+            <button id="calculate" style="display:none;">Calculate</button>
+            <div id="result"></div>
+        </div>
+    </main>
+    <script src="sici.js"></script>
+</body>
+</html>

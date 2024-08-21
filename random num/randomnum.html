@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random number generator</title>
+    <link rel="stylesheet" href="randomnum.css">
+</head>
+<body>
+    <header>
+        <h1>RANDOM NUMBER GENERATOR</h1>
+    </header>
+    <main>
+        <h3><b>Need a burst of randomness?</b>This tool generates random numbers tailored to your needs. Simply specify the minimum and maximum values, and let the magic happen. Whether you're picking lottery numbers, simulating dice rolls, or creating random data for a project, this random number generator is your go-to solution. Enjoy the thrill of unpredictability with every click!</h3>
+        <div id="operation">
+            <h3>Enter the range: </h3>
+            <div id="range">
+                <input class="range" id="lowrange" type="number" placeholder="Enter lower range">
+                <input class="range" id="highrange" type="number" placeholder="Enter higher range">
+            </div>
+            <br>
+            <button id="calculate">Generate</button>
+            <h3>Random number: </h3>
+            <div id="res"></div>
+        </div>
+    </main>
+    <script src="randomnum.js"></script>
+</body>
+</html>

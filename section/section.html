@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section Formula Calculator</title>
+    <link rel="stylesheet" href="section.css">
+</head>
+<body>
+    <header>
+        <h1>SECTION FORMULA CALCULATOR</h1>
+    </header>
+    <main>
+        <h3>
+            Section Formula Calculator -
+
+This online tool accurately calculates the coordinates of a point that divides a line segment in a given ratio. The section formula is a fundamental concept in coordinate geometry used to determine the position of a point between two known points. By inputting the coordinates of the endpoints of the line segment and the desired ratio, users can efficiently compute the coordinates of the dividing point. This tool finds applications in various fields, including physics, engineering, and computer graphics, where determining the position of points along a line is essential.
+        </h3>
+        <div id="operation">
+            <h3>Select the type of calculation:</h3>
+            <select id="calcType">
+                <option value="internal">Internal Division</option>
+                <option value="external">External Division</option>
+                <option value="midpoint">Midpoint</option>
+            </select>
+            <div id="inputs">
+                <!-- Inputs will be dynamically added here -->
+            </div>
+            <button id="calculate">Calculate</button>
+            <div id="result"></div>
+        </div>
+    </main>
+    <script src="section.js"></script>
+</body>
+</html>

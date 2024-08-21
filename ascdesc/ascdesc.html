@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrange in ascending or descening order</title>
+    <link rel="stylesheet" href="ascdsec.css">
+</head>
+<body>
+    <header>
+        <h1>ARRANGE NUMBERS IN ASCENDING OR DESCENDING ORDER</h1>
+    </header>
+    <main>
+        <h3><b>Need to organize your numbers?</b> This tool efficiently sorts numbers in either ascending or descending order. Simply input your list of numbers and select your preferred order. Whether you're managing a dataset, creating a spreadsheet, or just want to declutter your numbers, this sorter is your helpful assistant. Experience the ease of organizing numerical data with just a few clicks.</h3>
+        <div id="arrange">
+            <h3>Enter the numbers:</h3>
+            <input id="nums" type="text" placeholder="Enter numbers separated by commas">
+            <br>
+            <div id="operation">
+                <input id="ascending" type="radio" name="order" value="ascending">
+                <label for="ascending">Ascending</label>
+                <input id="descending" type="radio" name="order" value="descending">
+                <label for="descending">Descending</label>
+            </div>
+            <button id="arrangeBtn">Arrange</button>
+            <div id="res"></div>
+        </div>
+    </main>
+    <script src="ascdesc.js"></script>
+</body>
+</html>

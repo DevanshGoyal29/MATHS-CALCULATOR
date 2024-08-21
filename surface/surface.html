@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surface Area & Volume</title>
+    <link rel="stylesheet" href="surface.css">
+</head>
+<body>
+    <header>
+        <h1>SURFACE AREA AND VOLUME</h1>
+    </header>
+    <main>
+        <h3>Surface Area and Volume Calculator - 
+
+            This online tool provides accurate and efficient calculations for the surface area and volume of various three-dimensional geometric shapes. Whether you're a student tackling geometry problems, an engineer designing structures, or simply curious about the properties of solid shapes, this calculator offers a versatile solution. By inputting the necessary dimensions, users can quickly determine the surface area, which represents the total external area of a solid, and the volume, which quantifies the amount of space enclosed within a solid. This tool encompasses a range of shapes, including cubes, spheres, cylinders, cones, pyramids, and more, making it a valuable resource for various applications.</h3>
+        <div id="operation">
+            <h3>Select the solid: </h3>
+            <select id="solidSelect">
+                <option value="" disabled selected>Select solid</option>
+                <option value="cuboid">Cuboid</option>
+                <option value="cube">Cube</option>
+                <option value="cylinder">Cylinder</option>
+                <option value="cone">Cone</option>
+                <option value="sphere">Sphere</option>
+                <option value="hemisphere">Hemisphere</option>
+            </select>
+            <div id="inputs"></div>
+            <button id="calculate" style="display:none;">Calculate</button>
+            <div id="result"></div>
+        </div>
+    </main>
+    <script src="surface.js"></script>
+</body>
+</html>
