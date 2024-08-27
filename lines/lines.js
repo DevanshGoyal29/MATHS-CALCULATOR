@@ -100,13 +100,14 @@ document.getElementById('calculate').addEventListener('click', function () {
             }
             break;
         case 'slopeIntercept':
-            const yIntercept = parseFloat(document.getElementById('yIntercept').value);
-            if (isNaN(slope) || isNaN(yIntercept)) {
+            const slopeSI = parseFloat(document.getElementById('slope').value);
+            const yInterceptSI = parseFloat(document.getElementById('yIntercept').value);
+            if (isNaN(slopeSI) || isNaN(yInterceptSI)) {
                 resultHTML = '<p>Please enter valid numbers for slope and y-intercept.</p>';
             } else {
-                const a = slope;
+                const a = slopeSI;
                 const b = -1;
-                const c = yIntercept;
+                const c = yInterceptSI;
                 resultHTML = `<p>Equation: ${a}x + (${b})y = ${c}</p>`;
             }
             break;
