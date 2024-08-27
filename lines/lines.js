@@ -86,15 +86,16 @@ document.getElementById('calculate').addEventListener('click', function () {
             }
             break;
         case 'twoPoint':
-            const x2 = parseFloat(document.getElementById('x2').value);
-            const y2 = parseFloat(document.getElementById('y2').value);
-            if (isNaN(x1) || isNaN(y1) || isNaN(x2) || isNaN(y2)) {
+            const x1TP = parseFloat(document.getElementById('x1').value);
+            const y1TP = parseFloat(document.getElementById('y1').value);
+            const x2TP = parseFloat(document.getElementById('x2').value);
+            const y2TP = parseFloat(document.getElementById('y2').value);
+            if (isNaN(x1TP) || isNaN(y1TP) || isNaN(x2TP) || isNaN(y2TP)) {
                 resultHTML = '<p>Please enter valid numbers for x1, y1, x2, and y2.</p>';
             } else {
-                const slopeTwoPoint = (y2 - y1) / (x2 - x1);
-                const a = slopeTwoPoint;
-                const b = -1;
-                const c = y1 - a * x1;
+                const a = y2TP - y1TP;
+                const b = x1TP - x2TP;
+                const c = (y1TP * (x2TP - x1TP)) - (x1TP * (y2TP - y1TP));
                 resultHTML = `<p>Equation: ${a}x + (${b})y = ${c}</p>`;
             }
             break;
