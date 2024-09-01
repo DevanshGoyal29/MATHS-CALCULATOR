@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigonometric Functions</title>
+    <link rel="stylesheet" href="trigo.css">
+</head>
+<body>
+    <header>
+        <h1>Trigonometric Functions</h1>
+    </header>
+    <main>
+        <div id="operation">
+            <h3>Enter the angle in degrees:</h3>
+            <input type="number" id="angle" placeholder="Enter the angle">
+            <div id="trig">
+                <div class="radio-group">
+                    <input type="radio" id="sin" name="trigo" class="trigo">
+                    <label for="sin">Sin</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="cos" name="trigo" class="trigo">
+                    <label for="cos">Cos</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="tan" name="trigo" class="trigo">
+                    <label for="tan">Tan</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="sec" name="trigo" class="trigo">
+                    <label for="sec">Sec</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="cosec" name="trigo" class="trigo">
+                    <label for="cosec">Cosec</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="cot" name="trigo" class="trigo">
+                    <label for="cot">Cot</label>
+                </div>
+            </div>
+            <button id="calculate-btn">Calculate</button>
+            <div id="res"></div>
+        </div>
+    </main>
+    <script src="trigo.js"></script>
+</body>
+</html>
