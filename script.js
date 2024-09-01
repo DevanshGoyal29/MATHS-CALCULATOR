@@ -228,4 +228,9 @@ document.addEventListener("DOMContentLoaded", function() {
     get47.addEventListener("click",()=>{
         window.open("/lines/lines.html", "_blank");
     })
+
+    let get48 = document.querySelector("#trigo");
+    get48.addEventListener("click",()=>{
+        window.open("/trigo/trigo.html", "_blank");
+    })
 });
